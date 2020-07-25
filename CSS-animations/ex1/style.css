@@ -1,0 +1,35 @@
+:root {
+  --primary-color:#efab50;
+  --secondary-color:#f33614;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+#circle{
+  width:100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: var(--primary-color);
+
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+}
+
+@keyframes blink{
+  from{
+    transform: scale(1);
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 5px 1px var(--primary-color);
+  } to {
+    transform: scale(1.1);
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 15px 1px var(--secondary-color);
+  }
+}

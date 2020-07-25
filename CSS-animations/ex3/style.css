@@ -1,0 +1,47 @@
+:root {
+  --primary-color:#ef50ce;
+  --secondary-color:#f3ba14;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+#nav {
+    height: 50px;
+    padding: 20px;
+    background-color: var(--primary-color)
+}
+#ham-container{
+    width: 50px;
+    height: 50px;
+    display: grid;
+    grid-template-rows: 4fr 4fr 4fr;
+    grid-gap: 8px;
+    align-content: space-around;
+    cursor: pointer;
+}
+.line{
+background-color:var(--secondary-color)
+}
+#side-menu{
+    display: block;
+    height: 100%;
+    background-color: var(--secondary-color);
+    width: 300px;
+    transition: 1s;
+    animation-timing-function: linear;
+}
+.menu-item {
+    color: #fff;
+    height: 50px;
+    padding: 20px;
+    font-size: 30px;
+    font-family: tahoma;
+    
+}
+.hide-menu{
+  margin-left: -300px;
+}
