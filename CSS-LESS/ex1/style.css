@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvgUE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs169vgUE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvgUE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvgUE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9ogUE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZogUE.ttf) format('truetype');
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Oswald', sans-serif;
+}
+.header,
+form h1,
+#join-container h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 200;
+  color: #fff;
+}
+.button:hover,
+form button:hover,
+#join-container button:hover {
+  transform: scale(1.1);
+}
+form {
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-image: -webkit-linear-gradient(90deg, #8f0808, #ce2216);
+  background-image: -moz-linear-gradient(90deg, #8f0808, #ce2216);
+  background-image: -ms-linear-gradient(90deg, #8f0808, #ce2216);
+  background-image: -o-linear-gradient(90deg, #8f0808, #ce2216);
+}
+form input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+}
+form button {
+  margin: 20px auto;
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  display: block;
+}
+#join-container {
+  padding: 20px;
+  background-image: -webkit-linear-gradient(90deg, #c90000, #8f0808);
+  background-image: -moz-linear-gradient(90deg, #c90000, #8f0808);
+  background-image: -ms-linear-gradient(90deg, #c90000, #8f0808);
+  background-image: -o-linear-gradient(90deg, #c90000, #8f0808);
+}
+#join-container h2 {
+  font-weight: 300;
+}
+#join-container button {
+  margin: 20px auto;
+  padding: 10px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  display: block;
+  border-radius: 5px;
+}
+.data input {
+  color: orange;
+}
+.data button,
+.form .sign-up-area .left button {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 900;
+  color: red;
+}
+.form .sign-up-area .left button {
+  padding: 10px 20px;
+  font-size: 40px;
+  font-weight: 900;
+  padding: 5px 10px;
+}

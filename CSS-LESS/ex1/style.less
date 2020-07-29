@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+.gradient(@type; @colors; @dir: 0deg; @prefixes: webkit, moz, ms, o; @index: length(@prefixes)) when (@index > 0) {
+  .gradient(@type; @colors; @dir; @prefixes; (@index - 1));   
+  @prefix  : extract(@prefixes, @index);
+  @dir-old : 90 - (@dir);
+  background-image: ~"-@{prefix}-@{type}-gradient(@{dir-old}, @{colors})";
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.header {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 200;
+  color:#fff;
+}
+
+.button (@pad){
+  margin: 20px auto;
+  padding: @pad;
+  border-radius:20px;
+  cursor: pointer;
+  transition: 0.2s;
+  border:0;
+  outline:0;
+  font-size: 18px;
+  display: block;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+
+
+form{
+  padding: 20px;
+  width:300px;
+  height: 300px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  .gradient(linear; #8f0808, #ce2216);
+
+  h1{
+    &:extend(.header);
+  }
+  input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    outline:0;
+  }
+  button {
+    .button(10px 30px);
+  }
+  button:hover{
+    &:extend(.button:hover);
+  }
+}
+#join-container{
+  padding: 20px;
+  .gradient(linear; #c90000, #8f0808);
+  h2 { 
+    &:extend(.header);
+    font-weight: 300;
+  }
+  button {
+    .button(10px 40px);
+    border-radius: 5px;
+  }
+  button:hover{
+    &:extend(.button:hover);
+  }
+}
+
+
+
+.button(@pad, @fs){
+  padding: @pad;
+  font-size: @fs;
+  font-weight: 900;
+}
+.data {
+  input {
+      color: orange;
+  }
+}
+
+.data {
+  button {
+      .button(10px 20px, 20px);
+      color:red;
+  }
+}
+
+.form {
+  .sign-up-area{
+    .left{
+      button{
+        &:extend(.data button);
+        .button(10px 20px, 40px);
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+
